@@ -1,6 +1,15 @@
 {
-  "name": "ndh-angular-gauge",
-  "version": "0.0.0",
+  "name": "keller-angular-gauge",
+  "version": "4.1.0",
+  "description": "A tiny angular 10.0+ wrapper for forked https://github.com/naikus/svg-gauge - https://github.com/NDHussin/svg-gauge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NDHussin/angular-gauge.git"
+  },
+  "keywords": [],
+  "author": "ndhussin@keller-na.com",
+  "license": "MIT",
+  "homepage": "https://github.com/NDHussin/angular-gauge#readme",
   "scripts": {
     "start": "ng serve demo",
     "build:dist": "ng build angular-gauge",
