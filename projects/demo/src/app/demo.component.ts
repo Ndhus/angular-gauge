@@ -30,10 +30,14 @@ import { GaugeOptions } from '../../../angular-gauge/src/lib/gauge-defaults.serv
 
       <mwl-gauge
         class="three"
-        [max]="100"
-        [value]="gaugeValues[3]"
+        [max]="1000"
+        [value]="227"
         [animated]="true"
         [animationDuration]="1.5"
+        [showValue]="true"
+        [showValuePercent]="true"
+        [showMinValue]="true"
+        [showMaxValue]="true"
       >
       </mwl-gauge>
 

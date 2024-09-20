@@ -40,6 +40,21 @@ export interface GaugeOptions {
   showValue?: boolean;
 
   /**
+   * Whether to show the value at the center of the gauge as a percentage
+   */
+  showValuePercent?: boolean;
+
+  /**
+   * Whether to show the min value at the left of the gauge
+   */
+  showMinValue?: boolean;
+
+  /**
+   * Whether to show the max value at the right of the gauge
+   */
+  showMaxValue?: boolean;
+
+  /**
    * The CSS class of the gauge
    */
   gaugeClass?: string;
@@ -115,6 +130,21 @@ export class GaugeDefaults implements GaugeOptions {
    * Whether to show the value at the center of the gauge
    */
   showValue: boolean = true;
+
+  /**
+   * Whether to show the value at the center of the gauge as a percentage
+   */
+  showValuePercent: boolean = false;
+
+  /**
+   * Whether to show the min value at the left of the gauge
+   */
+  showMinValue: boolean = false;
+
+  /**
+   * Whether to show the max value at the right of the gauge
+   */
+  showMaxValue: boolean = false;
 
   /**
    * The CSS class of the gauge

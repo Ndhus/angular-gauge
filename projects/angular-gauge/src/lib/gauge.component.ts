@@ -9,7 +9,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { GaugeDefaults, GaugeOptions } from './gauge-defaults.service';
-import Gauge from 'svg-gauge';
+import Gauge from 'ndh-svg-gauge';
 
 @Component({
   selector: 'mwl-gauge',
@@ -55,6 +55,21 @@ export class GaugeComponent implements AfterViewInit, OnChanges, GaugeOptions {
    * Whether to show the value at the center of the gauge
    */
   @Input() showValue!: boolean;
+
+  /**
+   * Whether to show the value at the center of the gauge as a percentage
+   */
+  @Input() showValuePercent!: boolean;
+
+  /**
+   * Whether to show the value at the left of the gauge
+   */
+  @Input() showMinValue!: boolean;
+
+  /**
+   * Whether to show the max value at the right of the gauge
+   */
+  @Input() showMaxValue!: boolean;
 
   /**
    * The CSS class of the gauge
@@ -109,6 +124,9 @@ export class GaugeComponent implements AfterViewInit, OnChanges, GaugeOptions {
       max: this.max,
       label: this.label,
       showValue: this.showValue,
+      showValuePercent: this.showValuePercent,
+      showMinValue: this.showMinValue,
+      showMaxValue: this.showMaxValue,
       gaugeClass: this.gaugeClass,
       dialClass: this.dialClass,
       valueDialClass: this.valueDialClass,
